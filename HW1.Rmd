@@ -1,0 +1,33 @@
+---
+title: "Week1-Homework part2"
+author: "Zhi Ye"
+date: "2017-9-30"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Log-normal distribution
+100 values, mu=1, sigma=.25
+```{r cars}
+x <- rlnorm(100,1,0.25)
+```
+
+## Histogram of the distribution
+
+```{r pressure, echo=FALSE}
+hist(x,main = "Histogram of the distribution", xlab = "Variable", ylab = "Frequency of variables")
+```
+
+## Histogram of the distribution on the log scale
+```{r pressure, echo=FALSE}
+hist(log(x),main = "Histogram of the distribution on the log scale")
+```
+
+##  Mean and variance of the sample
+```{r pressure, echo=FALSE}
+mean(x)
+var(x)
+```
