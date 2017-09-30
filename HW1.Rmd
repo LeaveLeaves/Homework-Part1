@@ -3,8 +3,7 @@ title: "Week1-Homework part2"
 author: "Zhi Ye"
 date: "2017-9-30"
 output:
-  pdf_document: default
-  html_document: default
+  pdf_document
 ---
 
 ```{r setup, include=FALSE}
